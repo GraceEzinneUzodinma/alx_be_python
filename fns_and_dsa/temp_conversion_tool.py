@@ -13,4 +13,4 @@ elif unit == "F":
     converted = convert_to_celsius(temperature)
     print(f"{temperature}°F is {converted}°C")
 else:
-    print("Enter a valid temperature and unit")
+    print("Invalid temperature. Please enter a numeric value.")
