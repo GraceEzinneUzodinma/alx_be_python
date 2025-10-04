@@ -9,7 +9,7 @@ class BankAccount:
             return self.account_balance + amount
     def withdraw(self, amount):
         if amount > self.initial_balance:
-            return "insufficient funds"
+            return "Insufficient funds."
         else:
             return self.account_balance - amount
     def display_balance(self):
