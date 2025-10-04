@@ -3,11 +3,10 @@ class BankAccount:
         self.account_balance = account_balance
         self.initial_balance =  0
     def deposit(self, amount):
-        self.amount = amount
-        if amount < initial_balance:
+        if amount < self.initial_balance:
             return "invalid amount"
         else:
-            return account_balance + amount
+            return self.account_balance + amount
     def withdraw(self, amount):
         if amount < account_balance:
             return account_balance - amount
