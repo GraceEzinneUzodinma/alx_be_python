@@ -1,20 +1,23 @@
 import math
 
 class Shape:
+    def __init__(self):
+        pass
     def area(self):
         return "NotImplementedError"
+    
 class Rectangle(Shape):
-    def area(self, length, width):
+    def __init__(self, length, width):
+        super().__init__()
         self.length = int(length)
         self.width = int(width)
+    def area(self):
         calculated_area = self.length * self.width
-        return f"The area of the Rectangle is: {calculated_area}"
+        return {calculated_area}
 class Circle(Shape):
-    def area(self, radius):
+    def __init__(self, radius):
+        super().__init__()
         self.radius = float(radius)
+    def area(self):
         calculated_area = math.pi * self.radius ** 2
-        return f"The area of the Circle is: {calculated_area}"
-shape = Rectangle()
-print (shape.area(10, 5))
-shape = Circle()
-print(shape.area(7))
+        return {calculated_area}
