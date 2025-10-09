@@ -13,11 +13,11 @@ class Rectangle(Shape):
         self.width = int(width)
     def area(self):
         calculated_area = self.length * self.width
-        return {calculated_area}
+        return calculated_area
 class Circle(Shape):
     def __init__(self, radius):
         super().__init__()
         self.radius = float(radius)
     def area(self):
         calculated_area = math.pi * self.radius ** 2
-        return {calculated_area}
+        return calculated_area
